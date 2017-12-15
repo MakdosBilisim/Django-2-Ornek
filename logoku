@@ -1,0 +1,8 @@
+find /home/musluyuksektepe/PycharmProjects/ -name '*.pyc' -exec rm {} \;
+/etc/init.d/apache2 restart
+touch /home/musluyuksektepe/PycharmProjects/djiki/djiki/wsgi.py
+cat /dev/null > /home/musluyuksektepe/PycharmProjects/djangoLog.log
+clear
+echo "Log Bekleniyor"
+date +"%T"
+tail -f /home/musluyuksektepe/PycharmProjects/djangoLog.log
